@@ -9,7 +9,9 @@ https://github.com/matthiaskramm/swftools.git
 
 1. A pointer named 'ofs' was dynamically allocated memory by the function 'rfx_alloc' on line 1068, as shown in the diagram below:
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_1.png)
+
 2.At line 23 of the rfx_alloc function, a pointer variable named 'ptr' is defined. This pointer variable is dynamically allocated memory by the malloc function at line 30 and is returned at line 36, as illustrated in the diagram below:
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_2.png)
+
 3.Following that, the program returns -1 at line 1072 without releasing the memory area pointed to by the variable 'ofs' before the return, as illustrated in the diagram below:
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_3.png)
