@@ -7,7 +7,7 @@ The vulnerability is a memory leak bug located at line 1072 of the file /project
 swftools download address:
 https://github.com/matthiaskramm/swftools.git
 
-1. A memory leak vulnerability was discovered on line 1072 of the file /project/swftools/lib/modules/swftext.c. A pointer named 'ofs' was dynamically allocated memory by the function 'rfx_alloc' on line 1068, as shown in the diagram below:
+1. A pointer named 'ofs' was dynamically allocated memory by the function 'rfx_alloc' on line 1068, as shown in the diagram below:
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_1.png)
 2.At line 23 of the rfx_alloc function, a pointer variable named 'ptr' is defined. This pointer variable is dynamically allocated memory by the malloc function at line 30 and is returned at line 36, as illustrated in the diagram below:
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_2.png)
