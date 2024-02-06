@@ -8,7 +8,7 @@ swftools download address:
 https://github.com/matthiaskramm/swftools.git
 
 1. A pointer named 'ofs' was dynamically allocated memory by the function 'rfx_alloc' on line 1068, as shown in the diagram below:
-2. 
+
 ![image](https://github.com/LuMingYinDetect/swftools_defects/blob/main/swftools_1.png)
 
 2.At line 23 of the rfx_alloc function, a pointer variable named 'ptr' is defined. This pointer variable is dynamically allocated memory by the malloc function at line 30 and is returned at line 36, as illustrated in the diagram below:
