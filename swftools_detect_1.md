@@ -2,7 +2,7 @@ Affected Version:
 swftools 0.92 772e55a271f66818b06c6e8c9b839befa51248f4
 
 Vulnerability Description:
-The vulnerability is a memory leak bug located at line 1072 of the file /project/swftools/lib/modules/swftext.c. This vulnerability could potentially be exploited maliciously to cause resource exhaustion and denial of service attacks.
+The vulnerability is a memory leak bug located at line 1072 of the file /swftools/lib/modules/swftext.c. This vulnerability could potentially be exploited maliciously to cause resource exhaustion and denial of service attacks.
 
 swftools download address:
 https://github.com/matthiaskramm/swftools.git
